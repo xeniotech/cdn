@@ -6,12 +6,7 @@ gulp.task('build', function(cb) {
   runSequence([
       'clean',
       'webpack'
-    ],
-
-    'mocks',
-    'images',
-    'markup',
-    'quit');
+    ]);
 
   cb();
 });
