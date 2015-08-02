@@ -21,10 +21,8 @@ var webpackOverrideOptions = function() {
   };
 
   if (isProd()) {
-    webpackConfig.plugins.shift(1);
     var plugins = webpackConfig.plugins;
     plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: false }));
-    plugins.push(new webpack.optimize.CommonsChunkPlugin("vendor", "vendor[hash].js"));
     options.plugins = plugins;
   }
   return options
@@ -32,8 +30,8 @@ var webpackOverrideOptions = function() {
 
 gulp.task('webpack', [], function() {
   return gulp.src(CONFIG_FILENAME, {base: path.resolve(config.src)})
-    .pipe(gulpWebpack.configure(gulpWebpackConfig))
-    .pipe(gulpWebpack.overrides(webpackOverrideOptions()))
-    .pipe(gulpWebpack.compile())
+    .pipe(gulpWebpack.init(gulpWebpackConfig))
+    .pipe(gulpWebpack.props(webpackOverrideOptions()))
+    .pipe(gulpWebpack.run())
     .pipe(gulp.dest(config.dest));
 });
