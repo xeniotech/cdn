@@ -1,5 +1,6 @@
 //angular-core
 import 'angular/angular';
+import 'oclazyload/dist/ocLazyLoad';
 import 'angular-cookies/angular-cookies';
 import 'angular-ui-router/release/angular-ui-router';
 import './validate'; //modified angular-ui-validate
