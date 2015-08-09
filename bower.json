@@ -24,7 +24,8 @@
     "angular-ui-validate": "~1.1.0",
     "international-phone-number": "~0.0.7",
     "angular-cookies": "~1.4.2",
-    "oclazyload": "~1.0.4"
+    "oclazyload": "~1.0.4",
+    "ng-tags-input": "~3.0.0"
   },
   "resolutions": {
     "material-design-icons": "~2.0.0",

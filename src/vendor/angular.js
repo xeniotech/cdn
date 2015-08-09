@@ -20,3 +20,6 @@ import './angular-strap/angular-strap.js';
 import 'sweetalert/dist/sweetalert.css';
 import 'sweetalert/dist/sweetalert-dev.js';
 import 'angular-h-sweetalert/dist/ngSweetAlert.js';
+
+//tags
+import 'ng-tags-input/ng-tags-input';

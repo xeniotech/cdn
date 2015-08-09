@@ -4,3 +4,5 @@ import './material/css/material-design-icons.css';
 
 import '../styles/social.less';
 import '../styles/app.css';
+
+import 'ng-tags-input/ng-tags-input.css';
