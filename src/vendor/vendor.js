@@ -1,5 +1,6 @@
 import './styles';
 import 'jquery/dist/jquery.js';
+import 'moment/min/moment.min.js';
 import 'bootstrap/js/dropdown.js';
 import 'bootstrap/js/modal.js';
 import './angular';

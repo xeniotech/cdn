@@ -25,7 +25,9 @@
     "international-phone-number": "~0.0.7",
     "angular-cookies": "~1.4.2",
     "oclazyload": "~1.0.4",
-    "ng-tags-input": "~3.0.0"
+    "ng-tags-input": "~3.0.0",
+    "angular-credit-cards": "~2.3.5",
+    "moment": "~2.10.6"
   },
   "resolutions": {
     "material-design-icons": "~2.0.0",
