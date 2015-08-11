@@ -17,6 +17,7 @@ module.exports = {
     loaders: [
       {test: /jquery\.js$/, loader: "exports?jQuery!script"},
       {test: /moment.min\.js$/, loader: "exports?moment!script"},
+      {test: /numeral\.js$/, loader: "exports?numeral!script"},
       {test: /\.js$/, exclude: /node_modules|bower_components/, loader: 'babel-loader'},
       {test: /\.handlebars$/, loader: 'handlebars-loader'},
       {test: /\.less$/, loader: "style!css!less"},
