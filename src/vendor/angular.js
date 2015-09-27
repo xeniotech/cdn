@@ -23,3 +23,7 @@ import 'angular-h-sweetalert/dist/ngSweetAlert.js';
 
 //tags
 import 'ng-tags-input/ng-tags-input';
+
+
+// pagination
+import 'angular-utils-pagination/dirPagination';

@@ -11,6 +11,7 @@
   "license": "private",
   "dependencies": {},
   "devDependencies": {
+    "angular-utils-pagination": "^0.8.2",
     "assets-webpack-plugin": "^2.2.0",
     "babel-core": "^4.4.5",
     "babel-loader": "^4.0.0",
