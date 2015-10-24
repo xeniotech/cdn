@@ -33,3 +33,5 @@ import 'angular-utils-pagination/dirPagination';
 //blockUI
 import 'angular-block-ui/dist/angular-block-ui.min.css'
 import 'angular-block-ui/dist/angular-block-ui.js'
+
+import 'angular-credit-cards/release/angular-credit-cards.js';
