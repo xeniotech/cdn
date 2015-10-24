@@ -4,3 +4,4 @@ coverage
 *.log
 webpack-assets.json
 .idea
+.DS_Store

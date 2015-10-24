@@ -27,3 +27,9 @@ import 'ng-tags-input/ng-tags-input';
 
 // pagination
 import 'angular-utils-pagination/dirPagination';
+
+//blockui
+
+//blockUI
+import 'angular-block-ui/dist/angular-block-ui.min.css'
+import 'angular-block-ui/dist/angular-block-ui.js'

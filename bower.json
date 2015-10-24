@@ -28,7 +28,8 @@
     "ng-tags-input": "~3.0.0",
     "angular-credit-cards": "~2.3.5",
     "moment": "~2.10.6",
-    "numeral": "~1.5.3"
+    "numeral": "~1.5.3",
+    "angular-block-ui": "~0.2.0"
   },
   "resolutions": {
     "material-design-icons": "~2.0.0",
