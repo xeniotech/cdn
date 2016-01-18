@@ -12,6 +12,7 @@
   "dependencies": {},
   "devDependencies": {
     "angular-utils-pagination": "^0.8.2",
+    "angular-youtube-embed": "1.1.1",
     "assets-webpack-plugin": "^2.2.0",
     "babel-core": "^4.4.5",
     "babel-loader": "^4.0.0",
