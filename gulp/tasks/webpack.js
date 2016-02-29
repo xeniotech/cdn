@@ -6,6 +6,7 @@ var path = require('path'),
   config = require('../config'),
   buildArgs = require('yargs').argv,
   webpackConfig = require("../../webpack.config.js"),
+  zip = require('gulp-gzip');
 gulpWebpackConfig = {
   useMemoryFs: false,
   progress: false
@@ -22,7 +23,7 @@ var webpackOverrideOptions = function() {
 
   if (isProd()) {
     var plugins = webpackConfig.plugins;
-    plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: false }));
+    plugins.push(new webpack.optimize.UglifyJsPlugin({sourceMap: false}));
     options.plugins = plugins;
   }
   return options
@@ -33,5 +34,6 @@ gulp.task('webpack', [], function() {
     .pipe(gulpWebpack.init(gulpWebpackConfig))
     .pipe(gulpWebpack.props(webpackOverrideOptions()))
     .pipe(gulpWebpack.run())
+    .pipe(zip({append: true}))
     .pipe(gulp.dest(config.dest));
 });
